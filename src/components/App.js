@@ -9,6 +9,7 @@ class App extends Component {
     };
 
     render() {
+        console.log('test 2 ',this.state);
         return (
             <div className="container">
                 <div className="jumbotron">
@@ -22,9 +23,12 @@ class App extends Component {
         )
     }
 
-    revert = () => this.setState({
-        reverted: !this.state.reversed
-    })
+    revert = () => {
+        console.log('test 1');
+        this.setState({
+            reverted: !this.state.reversed
+        })
+    }
 }
 
 export default App
